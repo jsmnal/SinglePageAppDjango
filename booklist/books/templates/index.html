@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="{% static 'css/layout.css'%}" rel="stylesheet">
+    </head>
+    <body>
+    <h2> BookApp </h2>
+        {% block content %}
+        {% for book in book_list%}
+        <p>Book title: {{book.title}}, Author: {{book.author}}</p>
+        
+    </div>
+    {% endfor %}
+        {%endblock%}
+    </body>
+    <div class="footer">
+    <h3> BookApp 2021. </h3>
+    </div>
+</html>
