@@ -1,0 +1,62 @@
+body {
+    background:rgb(206, 241, 238);
+}
+
+.content {
+    display:flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.books {
+    display: flex;
+    flex-flow:column;
+}
+
+.book_info {
+    display: flex;
+    border: 2px solid black;
+    width: 200px;
+    flex-direction: column;
+    margin: 5px;
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#edit_form {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.book_info:hover {
+    background: red;
+}
+
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+}
+
+.form h2 {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+    margin-top: 0px;
+}
+
+.info_text {
+    display: flex;
+    justify-content: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.form {
+    background: white;
+    border:2px solid black;
+    padding: 10px;
+}
