@@ -1,0 +1,13 @@
+{% block content %}
+    <div class="form">
+        <h2>Form</h2>
+        <form action="{%url "add_book"%}" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{form.as_p}}
+            <div class="buttons">
+                <button type="submit">Save New Book</button>
+                <button type="button" class="close" onClick= "closeForm()">Close</button>
+            </div>
+        </form>
+    </div>
+{%endblock%}

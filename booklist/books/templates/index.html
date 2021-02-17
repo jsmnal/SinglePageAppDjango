@@ -4,19 +4,31 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="{% static 'css/layout.css'%}" rel="stylesheet">
+        <link href="{% static 'layout.css'%}" rel="stylesheet">
     </head>
     <body>
-    <h2> BookApp </h2>
+        <h1> BookApp </h1>
         {% block content %}
-        {% for book in book_list%}
-        <p>Book title: {{book.title}}, Author: {{book.author}}</p>
-        
-    </div>
-    {% endfor %}
+            <h3>Instructions: </h3>
+            <p class= "info_text">
+                1. Add new books: Click "Add New Book" button. <br>
+                2. By clicking the book info, you can open the edit form.</br>
+                3. With edit form, you can edit, delete or add books. <br> 
+            </p>
+            <div class="content">
+                <div id="edit_form">
+                </div>
+                <div class="books">
+                    {% for book in book_list%}
+                    <div class="book_info" data-id= "{{book.pk}}"> 
+                    Title: {{book.title}} <br>
+                    Author: {{book.author}}
+                    </div>
+                    {% endfor %}
+                    <button type= "button" class="create" onClick="createForm()">Add New Book</button>
+                </div>
+            </div>
+            <script src="/static/functions.js"></script>
         {%endblock%}
     </body>
-    <div class="footer">
-    <h3> BookApp 2021. </h3>
-    </div>
 </html>

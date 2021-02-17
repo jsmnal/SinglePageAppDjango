@@ -1,0 +1,15 @@
+{% block content %}
+    <div class="form">
+        <h2>Form</h2>
+        <form action="{%url "update_book" book.pk %}" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{form.as_p}}
+            <div class="buttons">
+                <button type="submit">Save</button>
+                <button type= "button" class="create" onClick="sendCreateForm()">Save New</button>
+                <button type="button" class="delete" onClick= "showDelete({{book.pk}})">Delete</button>
+                <button type="button" class="close" onClick= "closeForm()">Close</button>
+            </div>
+        </form>
+    </div>
+{%endblock%}
