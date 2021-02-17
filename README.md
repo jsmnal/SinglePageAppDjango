@@ -1,10 +1,10 @@
-# BookApp (practice project)
+## BookApp (practice project)
 Single Page App practice project with Django. <br>
 You can add, delete and edit books listed in the front page ordered by title.
 
 ![](screenshots/screenshot1.jpg)
 
-## Installation:
+### Installation:
 
 Clone the repository.
 
