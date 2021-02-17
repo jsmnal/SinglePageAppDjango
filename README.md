@@ -1,5 +1,8 @@
-# SinglePageAppDjango
-Recently started project in progress.
+# BookApp
+Single Page App Practice Project with Django.
+You can add, delete and edit books listed in the front page ordered by title.
+
+![](screenshots/screenshot1.jpg)
 
 ## Installation:
 
