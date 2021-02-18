@@ -24,7 +24,6 @@ function createForm() {
     fetch("/create/")
     .then(response => response.text())
     .then(form => document.getElementById("edit_form").innerHTML = form)
-    .then(create => document.querySelector("#edit_form form").addEventListener("create", sendCreateForm)) //event listener that follows the submit event
 }
 
 function sendCreateForm() {

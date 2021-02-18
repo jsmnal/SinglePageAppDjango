@@ -5,7 +5,7 @@
             {% csrf_token %}
             {{form.as_p}}
             <div class="buttons">
-                <button type="submit">Save New Book</button>
+                <button type="button" class="create" onClick="sendCreateForm()">Save New</button>
                 <button type="button" class="close" onClick= "closeForm()">Close</button>
             </div>
         </form>
